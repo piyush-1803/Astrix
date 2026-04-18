@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #08081a;
+  color: #ffffff;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Star Background */
+.star-bg {
+  background: 
+    radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%),
+    radial-gradient(1px 1px at 10% 15%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1px 1px at 20% 35%, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1px 1px at 30% 55%, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(1px 1px at 40% 25%, rgba(255, 255, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 50% 45%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1px 1px at 60% 65%, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1px 1px at 70% 35%, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(1px 1px at 80% 55%, rgba(255, 255, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 90% 15%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1.5px 1.5px at 15% 65%, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(1.5px 1.5px at 25% 85%, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(1.5px 1.5px at 35% 45%, rgba(255, 255, 255, 0.9), transparent),
+    radial-gradient(1.5px 1.5px at 45% 75%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1.5px 1.5px at 55% 25%, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(1.5px 1.5px at 65% 85%, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(1.5px 1.5px at 75% 55%, rgba(255, 255, 255, 0.9), transparent),
+    radial-gradient(1.5px 1.5px at 85% 35%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1.5px 1.5px at 95% 75%, rgba(255, 255, 255, 0.8), transparent);
+  background-size: 100% 100%, 100px 100px, 150px 150px, 200px 200px, 120px 120px, 180px 180px, 140px 140px, 160px 160px, 130px 130px, 170px 170px, 110px 110px, 190px 190px, 150px 150px, 170px 170px, 140px 140px, 160px 160px;
+  pointer-events: none;
+}
+
+/* Smooth transitions for all interactive elements */
+button, a {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Prevent text selection on double clicks */
+button {
+  user-select: none;
+}
